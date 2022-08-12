@@ -1,0 +1,17 @@
+<div>
+    <div>Name: {{spaceship.name}}</div>
+    <div>Hit Points: {{spaceship.hitPoints}}</div>
+    <div>Position: ({{spaceship.position.x}}, {{spaceship.position.y}}, {{spaceship.position.z}})</div>
+</div>
+<p>Editing <span>{{spaceship.name}}</span></p>
+<div>
+    <label>Hit Points:</label>
+    <input type="number" [(ngModel)]="spaceship.hitPoints" />
+</div>
+<div>
+    <label>Position:</label>
+    <div class="indent">
+        <app-coordinate-editor [(coordinate)]="spaceship.position">
+        </app-coordinate-editor>
+    </div>
+</div>

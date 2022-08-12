@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Spaceship } from './models/spaceship';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'two-way-binding';
+  title = 'Two Way Binding';
+  spaceship = new Spaceship('USS Enterprise');  
 }
