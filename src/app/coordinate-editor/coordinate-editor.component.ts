@@ -7,7 +7,7 @@ import { Coordinate } from '../models/coordinate';
   styleUrls: ['./coordinate-editor.component.css']
 })
 export class CoordinateEditorComponent implements OnInit {
-
+  // https://angular.io/guide/two-way-binding#how-two-way-binding-works
   @Input()
   coordinate = new Coordinate();
 
